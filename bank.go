@@ -34,6 +34,7 @@ func main() {
 	accountBalance, err := readFile()
 	if err != nil {
 		fmt.Println("Error in reading file, please restart APP")
+		panic("can't continue sorry")
 		return
 	}
 	for i := 0; i < 2; i++ {
