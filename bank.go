@@ -75,7 +75,8 @@ func main() {
 				fmt.Println("Insufficient balance")
 			} else {
 				accountBalance -= withdrawAmount
-				fmt.Println("Your balance is", accountBalance)
+				accountBalanceValue := writeFile(accountBalance)
+				fmt.Println("Your balance is", accountBalanceValue)
 			}
 		default:
 			fmt.Println("Thank you for using go bank")
